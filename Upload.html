@@ -1,0 +1,252 @@
+?>
+<!DOCTYPE html>
+<html land="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Users Home</title>
+    </head>
+    <style>
+         
+         *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 40%;
+    width: 100%;
+    background-color:white;
+}
+.nav{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 10px 10px 100px gray;
+}
+.nav .Logo{
+    width: 100px;
+    height: 40px;
+    border: 1px solid deeppink;
+    position: relative;
+    left: -80px;
+    top: 30px;
+}
+.nav .Logo h3{
+    color: white;
+    font-family: 'Times New Roman';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav .Logo h3:hover{
+    color:deeppink ;
+}
+.nav .tabs{
+    width: 450px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav .tabs a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Arial;
+    transition: 0.5s;
+}
+.nav .tabs a:hover{
+    color: black;
+}
+.nav .tabs a:nth-child(1):hover{
+    color: black;
+}
+.nav .Log{
+    width: 165px;
+    height: 100px;
+    position: relative;
+    right: -65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .Log {
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.nav .Log a:nth-child(1){
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: deeppink;
+    text-decoration: none;
+}
+
+.nav .Log a:nth-child(1):hover{
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+}
+.nav .Log a:nth-child(2){
+    padding: 10px 20px;
+    border: 1px solid deeppink;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+.nav .Log a:nth-child(2):hover{
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+}
+.uploadpic h3{
+    font-wieght: 600;
+    font-size: 30px;
+    
+}
+/*------upload-----*/
+.container-pic{
+        width: 25%;
+        height: 250%;
+        margin: 30px auto;
+        border: 1px solid black;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 10px 20px;
+        border-radius: 10%;
+        
+    }
+    .container-pic:hover{
+        background-color: gray;
+    }
+    form{
+        width: 80%;
+        margin: 20px auto;
+    }
+    form div{
+        margin-top:5px;
+    }
+    #img-div{
+        width: 80%;
+        padding: 5px;
+        margin: 15px auto;
+        border: 1px solid black;
+    }
+    #img_div:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    img{
+        margin: 5px;
+        width: 400px;
+        height: 180px;
+        bottom:50%;
+        margin-top: 10%;
+    }
+    p{
+        color: white;
+        margin: 5px;
+        margin-top: 5%;
+    }
+    p:hover{
+        color: deeppink;
+    }
+    .btn-success{
+    width: 10%;
+    height: 30px;
+    left: -5px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 15px;
+    background-color: deeppink;
+    border-radius: 5px;
+}
+.btn{
+    width: 10%;
+    height: 30px;
+    left: 40%;
+    margin-top: -2%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 15px;
+    background-color: black;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: deeppink;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.btn2{
+    width: 10%;
+    height: 30px;
+    right: 40%;
+    margin-top: -2%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 15px;
+    background-color: black;
+    border-radius: 5px;
+}
+.btn2:hover{
+    background-color: deeppink;
+}
+
+.btn2 a{
+    text-decoration: none;
+    color: white;
+}
+.mybutton{
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: deeppink;
+    text-decoration: none;
+    margin-top: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.mybutton:hover{
+    background-color: black;
+}
+
+</style>
+        <body>
+        <div class="nav">
+            <div class="Logo"><h3> SariBlogsite</h3></div>
+            <div class="tabs">
+                <a href="school.php"> Carefree</a>
+                <a href="family.php"> Pleasure</a>
+                <a href="bestfriend.php"> Enjoy</a>
+            </div>
+            <div class="Log">
+                <a href="thankyou.html">SAVE</a>
+                <a href="index.html">ADMIN</a>
+            </div>
+            </div>
+            <center>
+            <div class="uploadpic"><br><br>
+                <h3> Please upload profile picture </h3>
+                <div class="container-pic">
+                    <button class="mybutton"> Upload</button>

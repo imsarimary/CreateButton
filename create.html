@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html land="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Create</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 40%;
+    width: 100%;
+    background-color:black;
+}
+.nav{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 10px 10px 100px gray;
+}
+.nav .Logo{
+    width: 100px;
+    height: 40px;
+    border: 1px solid deeppink;
+    position: relative;
+    left: -80px;
+    top: 30px;
+}
+.nav .Logo h3{
+    color: white;
+    font-family: 'Times New Roman';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-weight: 400;
+}
+.nav .Logo h3:hover{
+    color:deeppink ;
+}
+.nav .tabs{
+    width: 450px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav .tabs a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Arial;
+    transition: 0.5s;
+}
+.nav .tabs a:hover{
+    color: deeppink;
+}
+.nav .tabs a:nth-child(1):hover{
+    color: deeppink
+}
+.nav .Log{
+    width: 165px;
+    height: 100px;
+    position: relative;
+    right: -80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .Log {
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.nav .Log a:nth-child(1){
+    padding: 10px 20px;
+    border: 1px solid deeppink;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+.nav .Log a:nth-child(2){
+    color: deeppink
+}
+.nav .Log a:nth-child(1):hover{
+    color: deeppink;
+    background: transparent;
+    border: 1px solid white;
+}
+.nav .Log a:nth-child(2){
+    text-shadow: 1px 1px 30px white;
+    text-decoration: none;
+}
+.nav .Log a:nth-child(2):hover{
+    color: white;
+}
+.content{
+    width: 1200px;
+    font-size: 40px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+span{
+    color: deeppink;
+}
+span:hover{
+    color: white;
+}
+.content .explore{
+    width: 150px;
+    height: 40px;
+    background: deeppink;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.content .explore a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+ .content .explore:hover{
+    background-color: white;
+}
+</style>
+    <body>
+        <div class="nav">
+            <div class="Logo"><h3> SariBlogsite</h3></div>
+            <div class="tabs">
+                <a href="index.html"> Enjoy</a>
+                <a href=""> Carefree</a>
+                <a href=""> Pleasure</a>
+            </div>
+            <div class="Log">
+                <a href="index.html">Done</a>
+                <a href="home.html">Go Back</a>
+            </div>
+            </div>
+            <div class="content"><br><br>
+                <small>FEEL FREE TO</small><br>
+                <h1><span>CREATE YOUR OWN</span></h1>
+                <h3>WEBSITE</h3>
+                <button class="explore"><a href="Upload.html">Create</a></button>
+            </div>
+    </body>
+        
+            
